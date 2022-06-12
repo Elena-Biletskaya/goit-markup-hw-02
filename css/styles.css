@@ -1,0 +1,233 @@
+/* дополнительный цвет текста #212121 и черный #000000 */
+/* основной цвет текста #757575 */
+/* белый #FFFFFF, темный фон #2F303A, светлый фон #F5F4FA */
+/* акцент, hover-nav голубой #2196F3 */
+/* Шрифты: logo - Raleway 700; Oleo Script 400; nav, content - Roboto 400, 500, 700, 900;  */
+
+:root {
+  --primary-color: #757575;
+  --secondary-color: #212121;
+  --accent-color: #2196f3;
+  --dark-color: #2f303a;
+  --light-color: #f5f4fa;
+  --primary-font: 'Roboto', sans-serif;
+  --normal-font: 400;
+  --medium-font: 500;
+  --bold-font: 700;
+  --big-font: 900;
+  --normal-font-size: 14px;
+  --medium-font-size: 16px;
+  --bold-font-size: 36px;
+  --padding: 0;
+}
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--normal-font);
+  line-height: 1.2;
+}
+.content {
+  width: 1600px;
+  margin: 0 auto;
+}
+.list {
+  list-style: none;
+}
+.marg {
+  margin: 0;
+}
+
+/* Шапка страницы */
+
+.header {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: var(--bold-font);
+  font-size: 26px;
+  color: #000;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 215px;
+  line-height: 1.2;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.menu-list,
+.menu-list-contact {
+  display: flex;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+  align-items: center;
+}
+.menu-item,
+.menu-contact {
+  font-family: var(--primary-font);
+  font-weight: var(--medium-font);
+  font-size: var(--normal-font-size);
+  color: var(--secondary-color);
+  margin-right: 50px;
+}
+.menu-item:first-child {
+  margin-left: 95px;
+}
+.menu-item:last-child {
+  margin-right: 330px;
+}
+.menu-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.menu-contact-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.contact-link:hover,
+.contact-link:focus,
+.menu-link:focus,
+.menu-contact-link:focus,
+.menu-link:hover,
+.menu-contact-link:hover {
+  color: #2196f3;
+}
+
+/* главная шапка */
+
+.main-head {
+  background-color: var(--dark-color);
+  text-align: center;
+  height: 600px;
+}
+.main-head-servise {
+  padding-top: 200px;
+}
+.main-head-servise-h {
+  color: #fff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.head-button {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 10px 32px;
+  border-color: var(--accent-color);
+  border-radius: 4px;
+  font-weight: var(--bold-font);
+  font-size: var(--medium-font-size);
+  margin-top: 30px;
+  margin-bottom: 200px;
+  cursor: pointer;
+}
+
+/* особенности работы */
+
+.feature {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 95px;
+}
+.feature-list {
+  display: flex;
+  padding: 0;
+}
+.feature-item {
+  margin-right: 30px;
+  width: 270px;
+}
+.feature-h2 {
+  display: none;
+}
+.feature-h3 {
+  font-weight: var(--bold-font);
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+/* чем занимаемся */
+
+.business {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 95px;
+  text-align: center;
+}
+
+.business-h {
+  font-weight: var(--bold-font);
+  font-size: var(--bold-font-size);
+  color: var(--secondary-color);
+}
+.business-list {
+  display: flex;
+  padding-top: 50px;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+  align-items: center;
+}
+.business-item {
+  margin-right: 30px;
+}
+
+/* состав команды */
+
+.team {
+  background-color: var(--light-color);
+  text-align: center;
+}
+.team-h2 {
+  font-weight: var(--bold-font);
+  font-size: var(--bold-font-size);
+  color: var(--secondary-color);
+  margin-top: 125px;
+  margin-bottom: 50px;
+  padding-top: 95px;
+}
+.team-list {
+  width: 1170px;
+  display: flex;
+  padding: 0 195px 95px 195px;
+}
+.team-item {
+  margin-right: 30px;
+}
+.team-h3 {
+  font-weight: var(--medium-font);
+  font-size: var(--medium-font-size);
+  color: var(--secondary-color);
+}
+
+/* Подвал страницы */
+
+.contact {
+  background-color: var(--dark-color);
+  padding-top: 60px;
+  margin-top: -20px;
+}
+
+.logo-color {
+  color: #fff;
+}
+.contact-list {
+  font-style: normal;
+  margin-top: 20px;
+  padding: 0 0 60px 215px;
+}
+.contact-link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.7;
+}
