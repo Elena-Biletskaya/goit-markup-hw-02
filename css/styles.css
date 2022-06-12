@@ -94,7 +94,7 @@ body {
 }
 .contact-link:hover,
 .contact-link:focus,
-.menu-link:focus,
+.menu-link:focus, .menu-link:active,
 .menu-contact-link:focus,
 .menu-link:hover,
 .menu-contact-link:hover {
